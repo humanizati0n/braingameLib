@@ -4,7 +4,8 @@ namespace morozov;
 
 class Solve {
 
-    public function solveOne($a, $b) {
+    public function solveOne($a, $b): array
+    {
 
         if ($a == 0) {
 

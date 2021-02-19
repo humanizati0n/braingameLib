@@ -1,7 +1,6 @@
 <?php
 
 namespace morozov;
-
 use core\EquationInterface;
 
 class SolveTwo extends Solve implements EquationInterface {
@@ -21,7 +20,7 @@ protected function discriminant($a, $b, $c) {
      * @return array|null
      */
 
-    public function  solve($a, $b, $c) {
+    public function  solve($a, $b, $c):array {
 
     if ($a == 0) {
 

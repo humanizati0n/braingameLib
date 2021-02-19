@@ -1,10 +1,10 @@
 <?php
 
 namespace morozov;
-
 use core\LogAbstract;
 use core\LogInterface;
 use DateTime;
+use phpDocumentor\Reflection\Types\Void_;
 
 class MyLog extends LogAbstract implements LogInterface {
 
@@ -14,7 +14,7 @@ class MyLog extends LogAbstract implements LogInterface {
 
     }
 
-    public static function log($str) {
+    public static function log(string $str):void {
 
         self::Instance()->_log($str);
 
@@ -43,7 +43,7 @@ class MyLog extends LogAbstract implements LogInterface {
 
     }
 
-    public  static function  write() {
+    public  static function  write():void {
 
         self::Instance()->_write();
 
